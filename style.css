@@ -1,10 +1,12 @@
 body{
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: gainsboro;
-
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 .card{
     position: relative;
@@ -16,6 +18,7 @@ body{
     padding: 30px 50px;
     background-color: #fff;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .card:hover{
     height: 380px;
@@ -59,6 +62,7 @@ img{
     background-color: #fff;
     transition: 0.5s;
     margin: 0 60px;
+    
 }
 .box{
     position: absolute;
@@ -143,4 +147,38 @@ img{
 }
 .maindiv:hover{
     clip-path: circle(141.4% at 100% 0);
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.name1{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #073668;
+    font-size: 35px;
+    position: relative;
+}
+.name1::before{
+    content: "Joginder";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7a004b;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateX(90deg);
+    transform-origin: top;
+}
+.name1:hover::before{
+    opacity: 1;
+    transform: rotateX(0deg);
 }
