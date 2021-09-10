@@ -175,10 +175,29 @@ img{
     background-color: #7a004b;
     opacity: 0;
     transition: 0.5s;
-    transform: rotateX(90deg);
+    transform: rotateX(270deg);
     transform-origin: top;
 }
 .name1:hover::before{
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.name1::after{
+    content: "Joginder";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #afe714;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+}
+.name1:hover::after{
     opacity: 1;
     transform: rotateX(0deg);
 }
