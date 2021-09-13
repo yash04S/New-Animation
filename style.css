@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 body{
     height: 100vh;
     background-color: gainsboro;
@@ -200,4 +201,22 @@ img{
 .name1:hover::after{
     opacity: 1;
     transform: rotateX(0deg);
+}
+.name2{
+    background-color: black;
+    background-image: url(image1.jpg);
+    /* width: 100vw; */
+    /* height: 100vh; */
+
+    /* position: relative; */
+    margin-left: 50px;
+}
+.name3{
+    color: white;
+    font-size: 100px;
+    margin-left: 100px;
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    right: 30px;
+    mix-blend-mode: screen;
 }
