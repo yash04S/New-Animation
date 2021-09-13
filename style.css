@@ -220,3 +220,23 @@ img{
     right: 30px;
     mix-blend-mode: screen;
 }
+.list{
+    margin-left: 50px;
+
+}
+li{
+    font-size: 20px;
+    
+}
+li:nth-child(2n){
+    color: yellow;
+}
+li:nth-child(2n+1){
+    color: tomato;
+}
+li:first-child{
+    color: cornflowerblue;
+}
+li:last-child{
+    color: darkgreen;
+}
