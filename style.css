@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     height: 100vh;
     background-color: gainsboro;
@@ -271,4 +275,53 @@ li:last-child{
 }
 .blend{
     mix-blend-mode: multiply;
+}
+.grand-parent{
+width: 100vw;
+height: 100vh;
+background-color: #fff;
+color: #fff;
+margin: 0;
+padding: 0;
+
+
+
+}
+.service{
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+    display: grid;
+    place-items: center;
+}
+p{
+    text-align: center;
+}
+.parent{
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    /* background: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.child{
+    height: 200px;
+    box-shadow:0 0 20px #bac3c3 ;
+    background: darkorange;
+    flex: 1 1 200px;
+    margin: 20px;
+}
+.child:first-child{
+    background: #ffbe76;
+}
+.child:last-child{
+    background: #ff7979;
+}
+@media (max-width:768px) {
+    .grand-parent{
+        height: auto;
+    }
 }
