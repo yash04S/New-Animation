@@ -278,7 +278,7 @@ li:last-child{
 }
 .grand-parent{
 width: 100vw;
-height: 100vh;
+height: auto;
 background-color: #fff;
 color: #fff;
 margin: 0;
@@ -324,4 +324,19 @@ p{
     .grand-parent{
         height: auto;
     }
+}
+.mouse{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: wheat;
+}
+.name4{
+    color: transparent;
+    font-size: 15rem;
+    background-image: url(image3.jpg);
+    background-size: 100% 100%;
+    background-clip: text;
+    -moz-background-clip: text;
 }
