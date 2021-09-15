@@ -340,3 +340,44 @@ p{
     background-clip: text;
     -moz-background-clip: text;
 }
+.keyboard{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.central-div{
+    width: calc(100vw - 40vw);
+    height: calc(100vh - 30vh);
+    position: relative;
+    border: 2px solid #000;
+    position: relative;
+}
+.heading{
+    font-size: 2rem;
+    padding: 20px 0 20px 20px;
+}
+.central-div p{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.1 rem;
+    text-align: right;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    
+}
+.central-div span::after{
+    background: currentColor;
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    font-weight: 700;
+    border-radius: 50%;
+    content: "";
+    margin: 0 0.6rem;
+}
